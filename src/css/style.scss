@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+$Gar: 'Cormorant Garamond', serif;
+$Rob: 'Roboto', sans-serif;
+$milk: #E1DECE;
+$black: #191919;
+
+@mixin text ($ff, $fw, $fz, $lh, $col) {
+  @if $ff == $Gar{
+    font-family: $Gar;
+  }
+  @if $fw == 700{
+    font-weight: $fw;
+  }
+  font-size: $fz;
+  @if $lh > 0{
+    line-height: $lh;
+  }
+  color: $col;
+}
+
+main{
+  background: $black;
+  position: relative;
+}
+
+
+.container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+.watermark{
+    font-family: $Rob;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 105px;
+    background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.65) -43.79%, rgba(222, 211, 109, 0) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: .7s;
+
+}
+.fancybox__caption{
+  text-align: center;
+}
+
+.header__link{
+  color:$milk;
+}
+.home-link{
+  @include text($Rob, 400px, 14px, 28px, #9f9f9f);
+}
+
+.page__navSection{
+  position: relative;
+  min-height: 330px;
+  text-align: center;
+  &-textContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+  &-title{
+    @include text($Rob, 400, 30px, 22px, #fff);
+    text-align: center;
+  }
+  &-subtitle{
+    @include text($Gar, 700, 40px, 45px, #fff);
+    text-align: center;
+  }
+  &-desc{
+    @include text($Rob, 400, 14px, 22px, #fff)
+  }
+  &-breadcamb{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include text($Rob, 400px, 14px, 28px, #9f9f9f);
+  }
+}
+
+
+
+@import "header";
+@import "home";
+@import "flats";
+@import "aside";
+@import "carousel";
+@import "footer";
+@import "magazine";
+@import "catalog";
+@import "information";
+@import "steps";
+@import "partners";
+@import "service";
+@import "about_Us";
+@import "portfolio";
+@import "articles";
+@import "contacts";

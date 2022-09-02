@@ -1,0 +1,35 @@
+.steps{
+  padding-bottom: 355px;
+  background: $black;
+  &__title-block{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title{
+    @include text($Gar, 400, 40px, 60px, #fff);
+    margin-bottom: 120px;
+
+  }
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 123px;
+    row-gap: 86px;
+  }
+  &__card{
+    width: calc(33.33333% - 82px);
+    &-img{
+      width: 64px;
+
+    }
+    &-title{
+      @include text($Rob, 700, 18px, 21px, #fff);
+      margin: 51px 0 21px;
+    }
+    &-desc{
+      @include text($Rob, 400, 14px, 24px, $milk);
+    }
+
+  }
+}

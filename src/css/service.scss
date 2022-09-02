@@ -1,0 +1,231 @@
+.srviceHome-bg {
+  background: url("../imges/service-bg.png") center/cover, no-repeat;
+}
+
+.order {
+  background: $black;
+  padding: 174px 0 130px;
+
+  &__title {
+    @include text($Gar, 700, 40px, 42px, $milk);
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &__text-desc {
+    display: flex;
+    column-gap: 10px;
+    margin: 17px 0;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+  }
+
+  &__text {
+    width: calc(50% - 50.33333px);
+
+    &-info {
+      @include text($Rob, 400, 16px, 26px, #fff)
+    }
+
+    &-num {
+      @include text($Rob, 400, 30px, 26px, #fff)
+    }
+  }
+}
+
+.serviceFlats-desc {
+  @include text($Rob, 400, 16px, 26px, $milk);
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.terms {
+  background: $black;
+  padding-bottom: 236px;
+
+  &__title {
+    @include text($Gar, 700, 40px, 45px, $milk);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__box {
+    background: #EFEFEF;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &:nth-child(2) {
+      background: $black;
+      border: 1px solid #E1DECE;
+      border-radius: 0 5px 5px 0;
+    }
+
+    &-desc {
+      @include text($Gar, 700, 16px, 18px, #191919);
+      padding: 21px 133px;
+
+    }
+
+    &-text {
+      color: $milk;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    background: #EFEFEF;
+    width: 25%;
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+
+    &-square {
+      @include text($Gar, 700, 16px, 18px, #191919);
+      margin: 30px 0;
+      text-align: center;
+
+
+    }
+  }
+  &__btn{
+    &:hover{
+      background: $milk;
+      color: $black;
+      transition: 0.7s;
+    }
+  }
+}
+
+.tariffs {
+  padding-bottom: 247px;
+  background: $black;
+
+
+  &__title {
+    @include text($Gar, 700, 40px, 45px, $milk);
+    text-align: center;
+  }
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  &__card {
+    width: calc(25% - 22.5px);
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 11px 0 ;
+    cursor: pointer;
+    transition: 4s;
+    &:hover{
+      transform: scale(1.2);
+      transition: 4s;
+    }
+    &-header{
+      @include text($Rob, 400, 12px, 26px, #191919);
+      background: $milk;
+    }
+    &-text{
+      @include text($Rob, 400, 8px, 12px, #191919);
+      margin-top: 16px;
+    }
+    &-info{
+      @include text($Rob, 400, 20px, 26px, #191919);
+    }
+    &-title{
+      @include text($Rob, 400, 10px, 12px, #191919);
+      margin: 20px 0 10px;
+      font-weight: bold;
+    }
+    &-footer{
+      @include text($Rob, 400, 10px, 20px, #191919);
+      margin-bottom: 65px;
+      padding: 0 18px;
+      text-align: left;
+    }
+    &-btn{
+      @include text($Gar, 400, 14px, 16px, #FFFFFF);
+      background: #191919;
+      border-radius: 5px;
+      padding: 16px 65px;
+      &:hover{
+        background: $milk;
+        color: $black;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+.roomCar{
+  background: $black;
+  padding-bottom: 200px;
+  &__title{
+    @include text($Gar, 700, 40px, 48px, $milk);
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__car{
+    position: relative;
+  }
+  &__images{
+    &-phot{
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  &__next{
+    position: absolute;
+    top: 45%;
+    left: -60px;
+  }
+  &__prev{
+    position: absolute;
+    top: 45%;
+    right: -60px;
+  }
+}
+
+.servInfo{
+  background: $black;
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 134px;
+  }
+ &__card{
+   width: calc(50% - 50px);
+   &-img{
+     width: 64px;
+   }
+   &-title{
+     @include text($Rob, 700, 18px, 21px, #FFFFFF);
+     margin: 51px 0 21px;
+   }
+   &-desc{
+     @include text($Rob, 400, 14px, 24px, #C4C4C4)
+   }
+ }
+}

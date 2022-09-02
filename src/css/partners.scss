@@ -1,0 +1,21 @@
+.partners {
+  padding-bottom: 190px;
+  background: $black;
+
+  &__title {
+    @include text($Gar, 400, 40px, 60px, $milk);
+    margin-bottom: 100px;
+  }
+  &__сolumn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 48px;
+  }
+  &__images{
+    width: calc(25% - 36px);
+    &-mar{
+      margin: 50px 0;
+    }
+  }
+}

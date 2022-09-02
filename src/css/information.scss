@@ -1,0 +1,46 @@
+.information {
+  padding: 0 0 468px;
+  background: $milk;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+    background: $black;
+    clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  }
+
+  &__title{
+    @include text($Gar, 400, 40px, 60px, $black);
+    margin-bottom: 128px;
+    text-align: right;
+
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    flex-direction: row;
+
+    &-text {
+      width: calc(33.333% - 20px);
+      position: relative;
+      &-title{
+        @include text($Gar, 700, 24px, 36px, $black);
+        margin-bottom: 40px;
+
+      }
+      &-desc{
+        @include text($Rob, 400, 14px, 24px, $black);
+
+      }
+
+    }
+  }
+}
+
+

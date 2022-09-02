@@ -1,0 +1,74 @@
+.header {
+  background: $black;
+  padding: 13px 0 20px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $Rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    background: linear-gradient(106.99deg, #E0DEDE 24.92%, #A2A0A0 53.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 35px;
+
+    &-item {
+      font-family: $Rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $milk;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom: -10px;
+        left: -15px;
+        transition: .7s;
+      }
+      &:hover::before{
+        width: calc(100% + 30px);
+
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    column-gap: 13px;
+    align-items: center;
+
+    &-num {
+      font-family: $Rob;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      background: linear-gradient(106.99deg, #E0DEDE 24.92%, #A2A0A0 53.57%), #DCD7C0;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}

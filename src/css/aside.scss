@@ -1,0 +1,42 @@
+.aside {
+  background: $black;
+  position: fixed;
+  width: 96px;
+  top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 600px;
+  row-gap: 200px;
+  left: 0;
+  z-index: 6;
+  &__title{
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-family: '$Rob';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $milk;
+    &::before {
+      content: '';
+      width: 75px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: -79%;
+      background: $milk;
+    }
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+  }
+  &__icon{
+    color: $milk;
+  }
+}

@@ -1,0 +1,71 @@
+.footer {
+  padding-top: 50px;
+  background: #191919;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 136px;
+    bottom: 0;
+    right: 0;
+    background: #1F1F1F;
+
+  }
+
+
+  &__top {
+    padding: 60px 0;
+    &-content{
+      display: flex;
+      column-gap: 80px;
+      flex-wrap: wrap;
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: calc(25% - 40px);
+      &-tels{
+        margin: 14px 0 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      &-tel{
+        @include text($Rob, 300, 13px, 25px, $milk)
+      }
+      &-address{
+        margin: 14px 0 30px;
+      @include text($Rob, 300, 13px, 25px, $milk)
+      }
+
+      &-title{
+        @include text($Rob, 400, 20px, 24px, white);
+      }
+      &-icons{
+        display: flex;
+        column-gap: 15px;
+        margin-top: 16px;
+      }
+      &-icon{
+        color:$milk;
+      }
+    }
+    &-map{
+      width: calc(50% - 80px);
+      height: 300px;
+      background: white;
+    }
+  }
+  &__bot{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-desc{
+      @include text($Rob, 400, 15px, 25px, $milk);
+      z-index: 5;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.home{
+  position: relative;
+  padding: 185px 0 249px;
+  margin-left: 96px;
+  background: $black url("../imges/hom-bg.png") center/cover no-repeat;
+  &__title{
+    font-family: $Gar;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: $milk;
+
+  }
+  &__subtitle{
+    font-family: $Rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: $milk;
+    margin: 22px 0 10px;
+
+  }
+  &__btn{
+    cursor: pointer;
+    background: $milk;
+    border-radius: 50px;
+    font-family: $Rob;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: $black;
+    padding: 23px 50px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+
+  }
+  &__logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -20%);
+    z-index: 7;
+
+
+  }
+  &__after {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    &:hover{
+      background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.75) -43.79%, rgba(222, 211, 109, 0.2) 52.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}

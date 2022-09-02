@@ -1,0 +1,35 @@
+.portfolio__bg{
+  background: url("../imges/porfolio_bg.png") center/cover, no-repeat;
+}
+.portfolio__block{
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__desct{
+  font-size: 27px;
+  line-height: 32px;
+}
+.portfolio__form{
+&-num{
+  @include text($Rob, 400, 16px, 18px, #C4C4C4);
+  padding: 23px 116px 23px 55px;
+  background: #ffffff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  &-btn{
+    @include text($Rob, 400, 16px, 19px, #fff);
+    padding: 23px 86px;
+    background: #191919;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+}
+.portfolio__form-text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}

@@ -1,0 +1,67 @@
+.articles__bg{
+  background: url("../imges/articles-bg.png") center/cover, no-repeat;
+
+
+}
+.articles__info{
+  padding: 92px 0 172px;
+  background: $black;
+  &-block{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 68px;
+  }
+  &-card{
+    width: calc(33.33333% - 20px);
+    &-img{
+
+    }
+    &-title{
+      @include text($Gar, 400, 20px, 22px, #ffff);
+      margin: 36px 0 18px;
+    }
+    &-desc{
+      @include text($Rob, 400, 14px, 24px, #ffff);
+      margin-bottom: 26px;
+    }
+    &-text{
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      &-tex{
+        @include text($Rob, 400, 14px, 16px, $milk);
+        border-bottom: 1px solid $milk;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 70%;
+          height: 1px;
+          background: $milk;
+          left: 0;
+          bottom: 8px;
+
+
+        }
+      }
+
+    }
+  }
+  &-btns{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &-btn{
+    transition: 0.7s;
+
+    &:hover {
+      background: $milk;
+      color: $black;
+      transition: 0.7s;
+    }
+  }
+  &-color{
+    color: $milk;
+  }
+}

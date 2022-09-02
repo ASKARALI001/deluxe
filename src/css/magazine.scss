@@ -1,0 +1,95 @@
+.magazine {
+  padding: 330px 0 387px;
+  background: $milk ;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: $black;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: $black;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+  }
+  &__content{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  &-img{
+    width: 1580px;
+    position: absolute;
+    top: -81px;
+    left: -642px;
+  }
+    &-info{
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+      &-title{
+        margin-bottom: 358px;
+        @include text($Rob, 400, 40px, 60px, #191919);
+
+      }
+      &-text{
+        @include text($Rob, 400, 16px, 26px, #404040);
+        margin-bottom: 26px;
+
+      }
+    }
+
+  }
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 262px;
+  }
+
+    &__card {
+      background: #191919;
+      border-radius: 20px;
+      text-align: center;
+      width: calc(25% - 22.5px);
+      min-width: 254px;
+      transition: 2s;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.2);
+        transition: 2s;
+      }
+
+
+      &-img {
+        padding-top: 37px;
+        width: 50%;
+
+      }
+
+      &-title {
+        @include text($Rob, 400, 18px, 28px, $milk);
+        text-transform: uppercase;
+        padding: 39px 0 19px;
+
+      }
+
+      &-text {
+        @include text($Rob, 400, 14px, 24px, $milk);
+        padding: 0 20px 37px;
+      }
+    }
+}

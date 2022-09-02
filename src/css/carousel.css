@@ -1,0 +1,12 @@
+.carousel {
+  padding-bottom: 91px;
+}
+.carousel__title {
+  font-family: "$Gar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+}
